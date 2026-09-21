@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: setup java s/w
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
-          distributions: temurin
+          distribution: temurin
           java-version: "17"
       - name: compile java code
         run: javac Msg.java
